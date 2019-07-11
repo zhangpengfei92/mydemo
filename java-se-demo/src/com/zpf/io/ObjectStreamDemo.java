@@ -13,8 +13,8 @@ public class ObjectStreamDemo {
         try {
             fis = new FileInputStream("D:\\myfile\\t.txt");
             ois = new ObjectInputStream(fis);
-            Object object = ois.readObject();
-            System.out.println("object = " + object);
+            User user = (User) ois.readObject();
+            System.out.println("user = " + user);
         } catch (Exception e) {
             e.printStackTrace();
         }finally{

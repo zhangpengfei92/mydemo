@@ -40,12 +40,12 @@ public class User implements Serializable{
         this.address = address;
     }
 
-   /* @Override
+   @Override
     public String toString() {
         return "User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", address='" + address + '\'' +
                 '}';
-    }*/
+    }
 }
