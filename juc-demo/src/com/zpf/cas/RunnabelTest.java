@@ -21,7 +21,7 @@ public class RunnabelTest {
 	
 	static AtomicInteger  count =new AtomicInteger(0);
 	static CountDownLatch cdl=new  CountDownLatch(1000);
-	//static AtomicInteger num = n
+	static int num = 0;
 	
 	public static void main(String[] args) {
 		
@@ -29,8 +29,8 @@ public class RunnabelTest {
 		for (int i = 0; i <1000; i++) {
 			
 				new Thread(() -> {
-					for (int j = 0; j < 1000; j++) {				
-						count.getAndIncrement();
+					for (int j = 0; j < 1000; j++) {
+						num++;
 					}
 				}				
 				).start();
