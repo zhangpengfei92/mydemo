@@ -12,8 +12,8 @@ public class FileWrtierReaderDemo {
 
     public static void main(String[] args) {
 
-        fileWrtier();
-      //  fileReader();
+        //fileWrtier();
+        fileReader();
     }
 
     private static void fileReader() {
@@ -22,7 +22,7 @@ public class FileWrtierReaderDemo {
             fileReader=new FileReader("D:\\myfile\\a.txt");
             int num =0;
             while ((num=fileReader.read())!=-1){
-                System.out.print((char)num);
+                System.out.print(  (char)num);
             }
         } catch (Exception e) {
             e.printStackTrace();
