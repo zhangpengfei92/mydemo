@@ -30,7 +30,6 @@ public class RentProxy{
 		Object proxy = Proxy.newProxyInstance(targer.getClass().getClassLoader(), 
 				targer.getClass().getInterfaces(),
 				new InvocationHandler() {
-					
 					@Override
 					public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 						afert();

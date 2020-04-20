@@ -24,4 +24,9 @@ public class LazySingleton {
 		}					
 		return singleton;		
 	}
+
+	private static String study(){
+
+		return "sss";
+	}
 }

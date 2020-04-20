@@ -14,7 +14,7 @@ package com.zpf.singleton;
  * @version 1.0
  */
 
-import org.junit.Test;
+//import org.junit.Test;
 
 public class SingleTest {
 	
@@ -39,8 +39,11 @@ public class SingleTest {
 	            new Thread(task,"" + i).start();
 	        }		
 	}
-	
-	@Test
+
+	public static void main(String[] args) {
+
+	}
+	//@Test
 	public void t() {
 		String ss = "111";		
 		int hashCode = ss.hashCode();
